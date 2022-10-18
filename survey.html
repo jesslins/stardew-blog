@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
+    <style>
+      ul {
+        list-style-type:none;
+         margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #c7eaec;
+      }
+
+      li{
+        float: left
+      }
+
+      li a{
+        display: block;
+        color: #6691b5;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #b9e2ec;
+        text-decoration: underline;
+      }
+
+      .font {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
   </head>
-  <body>
+  <body class="font">
     <header>
       <img
         src="images/Stardew-Valley-Landscape.png"
@@ -24,32 +54,6 @@
         <h1>Survey Form</h1>
       </center>
       <nav>
-        <style>
-          ul {
-            list-style-type:none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #c7eaec;
-          }
-
-          li{
-            float: left
-          }
-
-          li a{
-            display: block;
-            color: #6691b5;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-          }
-
-          li a:hover {
-            background-color: #b9e2ec;
-            text-decoration: underline;
-          }
-        </style>
         <!--<font size="+1"> makes the font bigger-->
         <font size="+1">
           <ul>
@@ -73,6 +77,34 @@
         </font>
       </nav>
     </header>
+    <br />
+    <main>
+      <form name="favorite-farm" id="fav-farm" method="get">
+        <fieldset form="fav-farm">
+          <legend>Which Stardew Valley Farm is your Favorite?</legend>
+          <input type="radio" name="farm" id="standard" />
+          <label for="standard">Standard Farm</label>
+          <br />
+          <input type="radio" name="farm" id="riverland" />
+          <label for="riverland">Riverland Farm</label>
+          <br />
+          <input type="radio" name="farm" id="forest" />
+          <label for="forest">Forest Farm</label>
+          <br />
+          <input type="radio" name="farm" id="hill-top" />
+          <label for="hill-top">Hill-top Farm</label>
+          <br />
+          <input type="radio" name="farm" id="wilderness" />
+          <label for="wilderness">Wilderness Farm</label>
+          <br />
+          <input type="radio" name="farm" id="four-corners" />
+          <label for="four-corners">Four Courners Farm</label>
+          <br />
+          <input type="radio" name="farm" id="beach" />
+          <label for="beach">Beach Farm</label>
+        </fieldset>
+      </form>
+    </main>
     <footer>
       <p style="color:#7d9596">&#169; Jessie Linsangan</p>
     </footer>
