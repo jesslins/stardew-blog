@@ -79,34 +79,57 @@
     </header>
     <br />
     <main>
-      <form name="favorite-farm" id="fav-farm" method="get">
-        <fieldset form="fav-farm">
+      <form name="stardew-valley-survey" id="stardew-survey" method="get">
+        <label for="fav-char">Who is your favorite character in Stardew Valley?</label>
+        <input type="text" name="fav-stardew-character" id="fav-char" />
+        <br />
+        <br />
+        <label for="gold_num">How much gold do you currently have in Stardew Valley?</label>
+        <input type="number" name="gold-amount" id="gold-num" />
+        <br />
+        <br />
+        <label for="total_gold_num">How much gold have you earned in total in Stardew Valley?</label>
+        <input type="number" name="total-gold-amount" id="total-gold-num" />
+        <br />
+        <br />
+        <label for="stardew-start">When did you start playing Stardew Valley?</label>
+        <input type="date" name="date-started-stardew" id="stardew-start" />
+        <br />
+        <br />
+        <fieldset form="stardew-survey">
           <legend>Which Stardew Valley Farm is your Favorite?</legend>
-          <input type="radio" name="farm" id="standard" />
+          <input type="radio" name="farm" id="standard" value="standard"/>
           <label for="standard">Standard Farm</label>
           <br />
-          <input type="radio" name="farm" id="riverland" />
+          <input type="radio" name="farm" id="riverland" value="riverland"/>
           <label for="riverland">Riverland Farm</label>
           <br />
-          <input type="radio" name="farm" id="forest" />
+          <input type="radio" name="farm" id="forest" value="forest"/>
           <label for="forest">Forest Farm</label>
           <br />
-          <input type="radio" name="farm" id="hill-top" />
+          <input type="radio" name="farm" id="hill-top" value="hill-top"/>
           <label for="hill-top">Hill-top Farm</label>
           <br />
-          <input type="radio" name="farm" id="wilderness" />
+          <input type="radio" name="farm" id="wilderness" value="wilderness"/>
           <label for="wilderness">Wilderness Farm</label>
           <br />
-          <input type="radio" name="farm" id="four-corners" />
+          <input type="radio" name="farm" id="four-corners" value="four-corners"/>
           <label for="four-corners">Four Courners Farm</label>
           <br />
-          <input type="radio" name="farm" id="beach" />
+          <input type="radio" name="farm" id="beach" value="beach"/>
           <label for="beach">Beach Farm</label>
         </fieldset>
+        <br />
+        <input type="reset" name="stardew-survey-reset" id="stardew-reset" value="Click to Clear All Inputs"/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="submit" name="stardew-survey-submit" id="stardew-submit" value="Click to Submit Your Answers" />
       </form>
     </main>
     <footer>
-      <p style="color:#7d9596">&#169; Jessie Linsangan</p>
+      <p style="color:#7d9596"><sub>&#169; Jessie Linsangan</sub></p>
     </footer>
   </body>
 </html>
