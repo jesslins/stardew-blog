@@ -5,38 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Farm</title>
+    <!--
+      CSS to style the website
+    -->
     <style>
+      /*  
+        list-style-type: none; gets rid of the bullet points on the list items
+
+        padding: 0; makes the space between the content and the border smaller
+
+        overflow: hidden; clips any content that overflows the element's box. This
+        gives it the rectangle surrounding the list items/navigation tabs
+
+        background-color: #c7eaec; makes the bar a light blue  
+      */
       ul {
         list-style-type:none;
-         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #c7eaec;
       }
 
+      /*
+        float: left; makes all of the navigation tabs go to the left, instead of being 
+        centered
+      */
       li{
         float: left
       }
 
+      /*
+        display: block; makes the rectangle/bar taller
+
+        color: #6691b5; sets the color of the text
+
+        padding: 16px; makes the space between the content and the border bigger
+
+        text-decoration: none; gets rid of the underline on the anchor tags
+      */
       li a{
         display: block;
         color: #6691b5;
-        text-align: center;
         padding: 16px;
         text-decoration: none;
       }
 
+      /*
+        When the mouse hovers over the anchor tags,
+
+        background-color: #b9e2ec; makes the block around the anchor tag a darker
+        blue
+
+        text-decoration: underline; places an underline on the text
+      */
       li a:hover {
         background-color: #b9e2ec;
         text-decoration: underline;
       }
 
+      /*
+        Sets the font for the webpage
+      */
       .font {
           font-family: Arial, Helvetica, sans-serif;
         }
     </style>
   </head>
+  <!--class="font" makes anything within the body tags the fonts set-->
   <body class="font">
+    <!--
+      The header tags contain the main heading, the navigation bar, and the image
+      banner for the website
+    -->
     <header>
       <img
         src="images/Stardew-Valley-Landscape.png"
@@ -53,35 +93,14 @@
       <center>
         <h1>My Farm</h1>
       </center>
+      <!--Navigation bar to navigate to every webpage of my site-->
       <nav>
-        <style>
-          ul {
-            list-style-type:none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #c7eaec;
-          }
-
-          li{
-            float: left
-          }
-
-          li a{
-            display: block;
-            color: #6691b5;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-          }
-
-          li a:hover {
-            background-color: #b9e2ec;
-            text-decoration: underline;
-          }
-        </style>
         <!--<font size="+1"> makes the font bigger-->
         <font size="+1">
+          <!--
+            Using an unordered list to list all of my anchor tags/navigation 
+            tabs
+          -->
           <ul>
             <li>
               <a href="index.html">Home Page</a>
@@ -103,11 +122,23 @@
         </font>
       </nav>
     </header>
+    <!--
+      The main tags contain the main content of the website, in this case,
+      it contains the image of my farm, and my headings and paragraphs
+      explaining my farm
+    -->
     <main>
+      <br />
+      <!--Center tag to make everything within it centered on the webpage-->
       <center>
         <img src="images/Farm-Placeholder.png" />
       </center>
     </main>
+    <!--
+      The footer tags contain the copyright symbol and my name
+
+      style="color:#7d9596" sets the color of the text as a light-bluish-gray
+    -->
     <footer>
       <p style="color:#7d9596"><sub>&#169; Jessie Linsangan</sub></p>
     </footer>

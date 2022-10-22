@@ -5,38 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
+    <!--
+      CSS to style the website
+    -->
     <style>
+      /*  
+        list-style-type: none; gets rid of the bullet points on the list items
+
+        padding: 0; makes the space between the content and the border smaller
+
+        overflow: hidden; clips any content that overflows the element's box. This
+        gives it the rectangle surrounding the list items/navigation tabs
+
+        background-color: #c7eaec; makes the bar a light blue  
+      */
       ul {
         list-style-type:none;
-         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #c7eaec;
       }
 
+      /*
+        float: left; makes all of the navigation tabs go to the left, instead of being 
+        centered
+      */
       li{
         float: left
       }
 
+      /*
+        display: block; makes the rectangle/bar taller
+
+        color: #6691b5; sets the color of the text
+
+        padding: 16px; makes the space between the content and the border bigger
+
+        text-decoration: none; gets rid of the underline on the anchor tags
+      */
       li a{
         display: block;
         color: #6691b5;
-        text-align: center;
         padding: 16px;
         text-decoration: none;
       }
 
+      /*
+        When the mouse hovers over the anchor tags,
+
+        background-color: #b9e2ec; makes the block around the anchor tag a darker
+        blue
+
+        text-decoration: underline; places an underline on the text
+      */
       li a:hover {
         background-color: #b9e2ec;
         text-decoration: underline;
       }
 
+      /*
+        Sets the font for the webpage
+      */
       .font {
           font-family: Arial, Helvetica, sans-serif;
         }
     </style>
   </head>
+  <!--class="font" makes anything within the body tags the fonts set-->
   <body class="font">
+    <!--
+      The header tags contain the main heading, the navigation bar, and the image
+      banner for the website
+    -->
     <header>
       <img
         src="images/Stardew-Valley-Landscape.png"
@@ -53,9 +93,14 @@
       <center>
         <h1>Survey Form</h1>
       </center>
+      <!--Navigation bar to navigate to every webpage of my site-->
       <nav>
         <!--<font size="+1"> makes the font bigger-->
         <font size="+1">
+          <!--
+            Using an unordered list to list all of my anchor tags/navigation 
+            tabs
+          -->
           <ul>
             <li>
               <a href="index.html">Home Page</a>
@@ -77,57 +122,92 @@
         </font>
       </nav>
     </header>
-    <br />
+    <!--
+      The main tags contain the main content of the website, in this case,
+      it contains the form for the survey I am conducting and all its inputs
+    -->
     <main>
+      <br />
+      <!--Form containing every input for the survey I am conducting-->
       <form name="stardew-valley-survey" id="stardew-survey" method="get">
+        <!--Text input asking who the user's favorite character is-->
         <label for="fav-char">Who is your favorite character in Stardew Valley?</label>
         <input type="text" name="fav-stardew-character" id="fav-char" />
         <br />
         <br />
+        <!--Number input asking how much gold the user currently has-->
         <label for="gold_num">How much gold do you currently have in Stardew Valley?</label>
         <input type="number" name="gold-amount" id="gold-num" />
         <br />
         <br />
+        <!--Number input asking how much gold the user has earned in total-->
         <label for="total_gold_num">How much gold have you earned in total in Stardew Valley?</label>
         <input type="number" name="total-gold-amount" id="total-gold-num" />
         <br />
         <br />
+        <!--
+          Date input asking when the user started playing Stardew Valley
+
+          This is the input type that we did not talk about that I decided to 
+          research and use
+        -->
         <label for="stardew-start">When did you start playing Stardew Valley?</label>
         <input type="date" name="date-started-stardew" id="stardew-start" />
         <br />
         <br />
+        <!--Fieldset for all of the radio inputs-->
         <fieldset form="stardew-survey">
+          <!--
+            Legend providing a title for the fieldset asking which farm is the
+            user's favorite
+          -->
           <legend>Which Stardew Valley Farm is your Favorite?</legend>
+          <!--Radio input representing the Standard Farm-->
           <input type="radio" name="farm" id="standard" value="standard"/>
           <label for="standard">Standard Farm</label>
           <br />
+          <!--Radio input representing the Riverland Farm-->
           <input type="radio" name="farm" id="riverland" value="riverland"/>
           <label for="riverland">Riverland Farm</label>
           <br />
+          <!--Radio input representing the Forest Farm-->
           <input type="radio" name="farm" id="forest" value="forest"/>
           <label for="forest">Forest Farm</label>
           <br />
+          <!--Radio input representing the Hill-top Farm-->
           <input type="radio" name="farm" id="hill-top" value="hill-top"/>
           <label for="hill-top">Hill-top Farm</label>
           <br />
+          <!--Radio input representing the Wilderness Farm-->
           <input type="radio" name="farm" id="wilderness" value="wilderness"/>
           <label for="wilderness">Wilderness Farm</label>
           <br />
+          <!--Radio input representing the Four Corners Farm-->
           <input type="radio" name="farm" id="four-corners" value="four-corners"/>
-          <label for="four-corners">Four Courners Farm</label>
+          <label for="four-corners">Four Corners Farm</label>
           <br />
+          <!--Radio input representing the Beach Farm-->
           <input type="radio" name="farm" id="beach" value="beach"/>
           <label for="beach">Beach Farm</label>
         </fieldset>
         <br />
+        <br />
+        <br />
+        <!--Reset input to clear all entries-->
         <input type="reset" name="stardew-survey-reset" id="stardew-reset" value="Click to Clear All Inputs"/>
         <br />
         <br />
         <br />
         <br />
+        <!--Submit input to send all entries to the server-->
         <input type="submit" name="stardew-survey-submit" id="stardew-submit" value="Click to Submit Your Answers" />
       </form>
     </main>
+    <!--
+      The footer tags contain the copyright symbol and my name
+
+      style="color:#7d9596" sets the color of the text as a light-bluish-gray
+    -->
     <footer>
       <p style="color:#7d9596"><sub>&#169; Jessie Linsangan</sub></p>
     </footer>

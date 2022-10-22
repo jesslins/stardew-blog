@@ -13,38 +13,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Stardew Valley Blog</title>
+    <!--
+      CSS to style the website
+    -->
     <style>
+      /*  
+        list-style-type: none; gets rid of the bullet points on the list items
+
+        padding: 0; makes the space between the content and the border smaller
+
+        overflow: hidden; clips any content that overflows the element's box. This
+        gives it the rectangle surrounding the list items/navigation tabs
+
+        background-color: #c7eaec; makes the bar a light blue  
+      */
       ul {
         list-style-type:none;
-         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #c7eaec;
       }
 
+      /*
+        float: left; makes all of the navigation tabs go to the left, instead of being 
+        centered
+      */
       li{
         float: left
       }
 
+      /*
+        display: block; makes the rectangle/bar taller
+
+        color: #6691b5; sets the color of the text
+
+        padding: 16px; makes the space between the content and the border bigger
+
+        text-decoration: none; gets rid of the underline on the anchor tags
+      */
       li a{
         display: block;
         color: #6691b5;
-        text-align: center;
         padding: 16px;
         text-decoration: none;
       }
 
+      /*
+        When the mouse hovers over the anchor tags,
+
+        background-color: #b9e2ec; makes the block around the anchor tag a darker
+        blue
+
+        text-decoration: underline; places an underline on the text
+      */
       li a:hover {
         background-color: #b9e2ec;
         text-decoration: underline;
       }
 
+      /*
+        Sets the font for the webpage
+      */
       .font {
           font-family: Arial, Helvetica, sans-serif;
         }
     </style>
   </head>
+  <!--class="font" makes anything within the body tags the fonts set-->
   <body class="font">
+    <!--
+      The header tags contain the main heading, the navigation bar, and the image
+      banner for the website
+    -->
     <header>
       <img
         src="images/Stardew-Valley-Landscape.png"
@@ -61,9 +101,14 @@
       <center>
         <h1>My Stardew Valley Blog</h1>
       </center>
+      <!--Navigation bar to navigate to every webpage of my site-->
       <nav>
         <!--<font size="+1"> makes the font bigger-->
         <font size="+1">
+          <!--
+            Using an unordered list to list all of my anchor tags/navigation 
+            tabs
+          -->
           <ul>
             <li>
               <a href="index.html">Home Page</a>
@@ -85,9 +130,19 @@
         </font>
       </nav>
     </header>
-    <br />
+    <!--
+      The main tags contain the main content of the website, in this case,
+      it contains my headings and paragraphs explaining my site and the
+      game it talks about
+    -->
     <main>
+      <br />
+      <!--Center tag to make everything within it centered on the webpage-->
       <center>
+        <!--
+          Heading for the paragraph where I introduce the website and talk
+          about what it will be about
+        -->
         <h2>Introduction</h2>
         <p>
           Welcome! If you're reading this, you've somehow stumbled upon the
@@ -100,6 +155,10 @@
           because of school, but hopefully I'll find the time to play again soon
           :]
         </p>
+        <!--
+          Heading for the paragraph where I quote Wikipedia and the Stardew Valley Wiki 
+          to explain what Stardew Valley is
+        -->
         <br />
         <h2>What is Stardew Valley?</h2>
         <p>
@@ -129,6 +188,11 @@
         </p>
       </center>
     </main>
+    <!--
+      The footer tags contain the copyright symbol and my name
+
+      style="color:#7d9596" sets the color of the text as a light-bluish-gray
+    -->
     <footer>
       <p style="color:#7d9596"><sub>&#169; Jessie Linsangan</sub></p>
     </footer>

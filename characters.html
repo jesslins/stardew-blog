@@ -5,38 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Favorite Characters</title>
+    <!--
+      CSS to style the website
+    -->
     <style>
+      /*  
+        list-style-type: none; gets rid of the bullet points on the list items
+
+        padding: 0; makes the space between the content and the border smaller
+
+        overflow: hidden; clips any content that overflows the element's box. This
+        gives it the rectangle surrounding the list items/navigation tabs
+
+        background-color: #c7eaec; makes the bar a light blue  
+      */
       ul {
-        list-style-type:none;
-         margin: 0;
+        list-style-type: none;
         padding: 0;
         overflow: hidden;
         background-color: #c7eaec;
       }
 
+      /*
+        float: left; makes all of the navigation tabs go to the left, instead of being 
+        centered
+      */
       li{
-        float: left
+        float: left;
       }
 
+      /*
+        display: block; makes the rectangle/bar taller
+
+        color: #6691b5; sets the color of the text
+
+        padding: 16px; makes the space between the content and the border bigger
+
+        text-decoration: none; gets rid of the underline on the anchor tags
+      */
       li a{
         display: block;
         color: #6691b5;
-        text-align: center;
         padding: 16px;
         text-decoration: none;
       }
 
+      /*
+        When the mouse hovers over the anchor tags,
+
+        background-color: #b9e2ec; makes the block around the anchor tag a darker
+        blue
+
+        text-decoration: underline; places an underline on the text
+      */
       li a:hover {
         background-color: #b9e2ec;
         text-decoration: underline;
       }
 
+      /*
+        Sets the font for the webpage
+      */
       .font {
           font-family: Arial, Helvetica, sans-serif;
         }
     </style>
   </head>
+  <!--class="font" makes anything within the body tags the fonts set-->
   <body class="font">
+    <!--
+      The header tags contain the main heading, the navigation bar, and the image
+      banner for the website
+    -->
     <header>
       <img
         src="images/Stardew-Valley-Landscape.png"
@@ -53,35 +93,15 @@
       <center>
         <h1>My Favorite Characters</h1>
       </center>
+      <!--Navigation bar to navigate to every webpage of my site-->
       <nav>
-        <style>
-          ul {
-            list-style-type:none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #c7eaec;
-          }
-
-          li{
-            float: left
-          }
-
-          li a{
-            display: block;
-            color: #6691b5;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-          }
-
-          li a:hover {
-            background-color: #b9e2ec;
-            text-decoration: underline;
-          }
         </style>
         <!--<font size="+1"> makes the font bigger-->
         <font size="+1">
+          <!--
+            Using an unordered list to list all of my anchor tags/navigation 
+            tabs
+          -->
           <ul>
             <li>
               <a href="index.html">Home Page</a>
@@ -103,6 +123,89 @@
         </font>
       </nav>
     </header>
+    <!--
+      The main tags contain the main content of the website, in this case,
+      it contains the table, and my headings and paragraphs talking about
+      my favorite characters
+    -->
+    <main>
+      <br />
+      <!--Center tag to make everything within it centered on the webpage-->
+      <center>
+        <!--Heading for my table-->
+        <h2>Birthdays and Gifts</h2>
+        <br />
+        <br />
+        <table>
+          <tr>
+            <!--Heading for the character column in the table-->
+            <th>Character</th>
+            <!--
+              Heading for the birthday column in the table
+              &nbsp; is being used to make each column more uniform
+            -->
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;Birthday</th>
+            <!--Heading for the best gift column in the table-->
+            <th>Best Gift</th>
+          </tr>
+          <!--
+            Table row representing Penny, her birthday, and the best
+            gift for her
+          -->
+          <tr>
+            <td>Penny</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;Fall 2</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diamond</td>
+          </tr>
+          <!--
+            Table row representing Leah, her birthday, and the best
+            gift for her
+          -->
+          <tr>
+            <td>Leah</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;Winter 23</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Goat Cheese</td>
+          </tr>
+          <!--
+            Table row representing Haley, her birthday, and the best
+            gift for her
+          -->
+          <tr>
+            <td>Haley</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;Spring 14</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coconut</td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <!--Heading for the paragraph where I talk about Penny-->
+        <h2>Penny</h2>
+        <p>
+          Penny is definitely my favorite character so far! She's very sweet, and extremely caring. 
+          Throughout the game, you can see that she has gone through a lot, and I believe that she
+          deserves so much more than she has gotten. She's amazing with Jas and Vincent, and I hope
+          that her life will get better soon.
+        </p>
+        <br />
+        <!--Heading for the paragraph where I talk about Leah-->
+        <h2>Leah</h2>
+        <p>
+          Leah is my second-favorite character. She's very kind, creative, and a great person in
+          general. I've always had a liking towards artistic people, and I look up to them, and Leah
+          is exactly that. There are many adorable cutscenes with Leah and your character where she
+          teaches you how to paint, or gives you art that she has made for you.
+        </p>
+        <br />
+        <!--Heading for the paragraph where I talk about Haley-->
+        <h2>Haley</h2>
+      </center>
+      
+    </main>
+    <!--
+      The footer tags contain the copyright symbol and my name
+
+      style="color:#7d9596" sets the color of the text as a light-bluish-gray
+    -->
     <footer>
       <p style="color:#7d9596"><sub>&#169; Jessie Linsangan</sub></p>
     </footer>
